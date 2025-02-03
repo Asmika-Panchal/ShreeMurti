@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Header */
+header {
+    background-color: #5f021f;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: #cc5200;
+    border-radius: 5px;
+}
+
+/* Carousel */
+.carousel {
+    margin-top: 20px;
+}
+
+.carousel img {
+    height: 500px;
+    object-fit: cover;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+p {
+    color: #555;
+    font-size: 1rem;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #ff6600;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer nav {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
