@@ -13,51 +13,123 @@ header {
     padding: 15px 0;
     text-align: center;
 }
-
 header h1 {
     margin: 0;
     font-size: 28px;
 }
 
-nav {
-    margin-top: 10px;
+/* Navbar */
+.navbar {
+    background-color: #600020; /* Dark maroon */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
 }
-
-nav a {
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
-    font-size: 18px;
+    font-size: 20px;
+}
+.nav-links a:hover {
+    text-decoration: underline;
+}
+.nav-links a.active {
+    color: #ff6600;
 }
 
-nav a:hover {
-    background-color: #cc5200;
-    border-radius: 5px;
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 30px;
+}
+.social-icons a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+.social-icons a:hover {
+    color: #a52a2a;
+}
+.social-tray{
+    background-color: #800020;
+    color: white;
 }
 
 /* Carousel */
 .carousel {
     margin-top: 20px;
 }
-
 .carousel img {
     height: 500px;
     object-fit: cover;
 }
 
+/* Main Content */
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+/* Headings */
+h2 {
+    color: #800020;
+    font-weight: bold;
+    text-align: center;
+}
 h3 {
-    margin: 0;
+    color: #a52a2a;
+    font-weight: bold;
+    margin-top: 20px;
     font-size: 1.2rem;
 }
 
+/* Text Elements */
 p {
-    color: #555;
-    font-size: 1rem;
+    font-size: 16px;
+    color: #333;
 }
 
+/* Links */
+a {
+    color: #800020;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Offerings List */
 ul {
-    list-style-type: square;
-    padding-left: 20px;
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    background: #800020;
+    color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Contact Information */
+.contact-info i {
+    color: #800020;
+    margin-right: 10px;
 }
 
 /* Footer */
@@ -68,18 +140,15 @@ footer {
     padding: 20px 0;
     margin-top: 20px;
 }
-
 footer nav {
     margin-bottom: 10px;
 }
-
 footer a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
     font-size: 16px;
 }
-
 footer a:hover {
     text-decoration: underline;
 }
