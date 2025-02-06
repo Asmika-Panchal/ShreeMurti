@@ -1,4 +1,4 @@
-/* General Styles */
+/* 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,7 +6,8 @@ body {
     background-color: #f8f9fa;
 }
 
-/* Header */
+
+Header
 header {
     background-color: #5f021f;
     color: white;
@@ -18,9 +19,13 @@ header h1 {
     font-size: 28px;
 }
 
-/* Navbar */
+.logo-img img{ 
+    width: 140px;
+}
+
+Navbar
 .navbar {
-    background-color: #600020; /* Dark maroon */
+    background-color: #600020; Dark maroon
     color: white;
     display: flex;
     justify-content: space-between;
@@ -28,7 +33,7 @@ header h1 {
     padding: 15px 30px;
 }
 .logo {
-    font-size: 24px;
+    font-size: 27px;
     font-weight: bold;
 }
 .nav-links {
@@ -44,7 +49,264 @@ header h1 {
     text-decoration: underline;
 }
 .nav-links a.active {
-    color: #ff6600;
+    color: #dc0f04;
+}
+
+Social Icons
+.social-icons {
+    display: flex;
+    gap: 30px;
+}
+.social-icons a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+.social-icons a:hover {
+    color: #a52a2a;
+}
+.social-tray{
+    background-color: #800020;
+    color: white;
+}
+
+Carousel
+.carousel {
+    margin-top: 20px;
+}
+.carousel img {
+    height: 500px;
+    object-fit: cover;
+}
+
+Main Content
+.container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+
+
+Headings
+h1 {
+    color: #800020;
+    font-weight: bold;
+    text-align: center;
+}
+h2 {
+    color: #800020;
+    font-weight: bold;
+    text-align: center;
+}
+h3 {
+    color: #a52a2a;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+Text Elements
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+Links
+a {
+    color: #800020;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+Offerings List
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    background: #800020;
+    color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+Contact Information
+.contact-info i {
+    color: #800020;
+    margin-right: 10px;
+}
+
+Footer
+footer {
+    background-color: #ff6600;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+.footer .footer-nav {
+    margin-bottom: 10px;    
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.gallery img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    padding: 7px;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px rgba(224, 151, 151, 0.2);
+}
+Paragraph Section
+ .p-murti {
+    color: #333;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 20px 120px;
+    padding: 10px;
+    justify-content: space-between;
+    background: #fff5f5; Light pink background
+    border-left: 5px solid #800020; 
+    border-right:5px solid #800020 ;Dark maroon left border
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+Services Section
+.services {
+    text-align: center;
+    padding: 50px 20px;
+
+    background-color: #f9f9f9; Light gray background
+}
+
+.services h2 {
+    font-size: 28px;
+    color: #800020;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+Service Cards
+.card-services {
+    display: inline-block;
+    width: 400px;
+    height: 570px;
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(250, 182, 195);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-services:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-services h3 {
+    color: #a52a2a;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-services img {
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-services p {
+    font-size: 20px;
+    color: #222121;
+    margin-top: 10px;
+    padding: 0;
+    margin: 3px;
+    border-left: none;
+    background: none;
+    box-shadow: none;
+} */
+
+
+/* next */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+}
+
+
+/* Header */
+header {
+    background-color: #5f021f;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.logo-img img{ 
+    width: 140px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #600020;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links a:hover {
+    text-decoration: underline;
+}
+.nav-links a.active {
+    color: #dc0f04;
 }
 
 /* Social Icons */
@@ -77,18 +339,21 @@ header h1 {
 /* Main Content */
 .container {
     background: #ffffff;
-    padding: 30px;
+    padding: 20px;
+    max-width: 1200px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
+    margin-top: 30px;
+    margin: 0 auto;
 }
 
 /* Headings */
-h2 {
+h1, h2 {
     color: #800020;
     font-weight: bold;
     text-align: center;
 }
+
 h3 {
     color: #a52a2a;
     font-weight: bold;
@@ -134,21 +399,244 @@ ul li {
 
 /* Footer */
 footer {
-    background-color: #ff6600;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
+    background-color: #fce4ec;
+    padding: 24px;
+  }
+  
+  footer h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #880e4f;
+  }
+  
+  footer p,
+  footer a {
+    color: #ad1457;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  footer .social-icons a {
+    margin-right: 8px;
+  }
+  
+  footer .container {
+    display: flex;
+    background-color: #fce4ec;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
-footer nav {
+.gallery img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    padding: 7px;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px rgba(224, 151, 151, 0.2);
+}
+
+/* Paragraph Section */
+.p-murti {
+    color: #333;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 10px ;
+    padding: 10px;
+    justify-content: space-between;
+    background: #fff5f5;
+    border-left: 5px solid #800020;
+    border-right:5px solid #800020;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.services h2 {
+    font-size: 28px;
+    color: #800020;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Service Cards */
+.card-services {
+    display:inline-table;
+    width: 400px;
+    height: 470px;
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(250, 182, 195);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-services:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-services h2 {
+    color: #a52a2a;
+    font-size: 20px;
+    font-weight: bold;
     margin-bottom: 10px;
 }
-footer a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 16px;
+
+.card-services img {
+    width : 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
 }
-footer a:hover {
-    text-decoration: underline;
+
+.card-services p {
+    font-size: 16px;
+    color: #222121;
+    margin-top: 10px;
+}
+
+/* Responsive Design with Media Queries */
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .card-services {
+        width: 350px;
+        height: 500px;
+    }
+
+    .carousel img {
+        height: 450px;
+    }
+
+    .gallery img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo-img img {
+        width: 120px;
+    }
+
+    .card-services {
+        width: 300px;
+        height: 450px;
+    }
+
+    .carousel img {
+        height: 400px;
+    }
+
+    .gallery img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .p-murti {
+        margin: 20px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .navbar .nav-links a {
+        font-size: 18px;
+    }
+
+    .carousel img {
+        height: 350px;
+    }
+
+    .card-services {
+        width: 270px;
+        height: 420px;
+    }
+
+    .gallery img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .services h2 {
+        font-size: 24px;
+    }
+
+    .p-murti {
+        margin: 20px 20px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .navbar .nav-links a {
+        font-size: 16px;
+    }
+
+    .card-services {
+        width: 90%;
+        height: auto;
+    }
+
+    .carousel img {
+        height: 300px;
+    }
+
+    .gallery img {
+        width: 180px;
+        height: 180px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    .p-murti {
+        margin: 20px 10px;
+        padding: 5px;
+    }
 }
