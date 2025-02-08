@@ -72,6 +72,7 @@
             padding: 20px;
             border-radius: 10px 5px solid #800020;
           "
+          onsubmit="sendToWhatsApp(event)"
         >
           <div style="background-color: #f4eff0" class="p-3 rounded">
             <p style="font-size: 16px">
@@ -95,20 +96,6 @@
             />
           </div>
           <div class="form-group">
-            <label for="email"
-              >Email
-              <subscript style="color: #8d8a8a">(required)</subscript>
-            </label>
-
-            <input
-              type="email"
-              id="email"
-              class="form-control"
-              placeholder="Email"
-              required
-            />
-          </div>
-          <div class="form-group">
             <label for="message">Message</label>
             <textarea
               id="message"
@@ -118,8 +105,8 @@
               required
             ></textarea>
           </div>
-          <button type="submit" class="btn btn-outline-danger btn-block">
-            Send
+          <button type="submit" class="btn btn-outline-success btn-block">
+            Send via WhatsApp
           </button>
         </form>
       </section>
@@ -182,6 +169,27 @@
         <p>© 2025 Shree Murti | All Rights Reserved</p>
       </div>
     </footer>
+    <script>
+      function sendToWhatsApp(event) {
+        event.preventDefault();
+
+        let name = document.getElementById("name").value.trim();
+        let message = document.getElementById("message").value.trim();
+
+        if (!name || !message) {
+          alert("Please enter your name and message.");
+          return;
+        }
+
+        let whatsappMessage = `Namaste! I am ${name}. I am interested in Pooja rituals and decorations. Message: ${message}`;
+
+        let whatsappUrl = `https://wa.me/919702497850?text=${encodeURIComponent(
+          whatsappMessage
+        )}`;
+
+        window.open(whatsappUrl, "_blank");
+      }
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
