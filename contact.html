@@ -3,9 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Get in touch for Murti Sthapana, spiritual ceremonies, and divine pooja celebrations.">
-  <meta name="keywords" content="Contact Murti Sthapana, Pooja Booking, Rituals Inquiry">
-  <title>Contact Us - Murti Sthapana Rituals</title>
+    <meta
+      name="description"
+      content="Get in touch for Murti Sthapana, spiritual ceremonies, and divine pooja celebrations."
+    />
+    <meta
+      name="keywords"
+      content="Contact Murti Sthapana, Pooja Booking, Rituals Inquiry"
+    />
+    <title>Contact Us - Murti Sthapana Rituals</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -31,8 +37,8 @@
         <div class="logo">
           <div class="logo-img">
             <a href="index.html">
-              <img src="upload/logo.png" alt="logo">
-          </a>
+              <img src="upload/logo.png" alt="logo" />
+            </a>
           </div>
           <div>Shree Murti</div>
         </div>
@@ -67,69 +73,22 @@
     <main>
       <section>
         <h1>Contact Us</h1>
-        <form
-          class="contact-form"
+        <div
+          class="col"
           style="
-            max-width: 600px;
-            font-size: 18px;
-            margin: 0 auto;
-            padding: 20px;
-            border-radius: 10px 5px solid #800020;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
           "
-          onsubmit="sendToWhatsApp(event)"
         >
-          <div style="background-color: #f4eff0" class="p-3 rounded">
-            <p style="font-size: 16px">
-              Contact us through WhatsApp to arrange Murti Sthapana and perform
-              sacred pooja rituals with devotion and precision. We specialize in
-              organizing idol installation ceremonies, complete with traditional
-              rituals and spiritual guidance. Let us help you plan a divine
-              Murti Pratishtha Mahotsav, ensuring every aspect is handled with
-              authenticity and care for a truly blessed experience.
-            </p>
+          <div class="row" style="justify-content: center">
+            <img src="qr_code.jpg" alt="QR Code" style="width: 20%" />
           </div>
-          <div class="spacer py-2"></div>
-          <div class="form-group">
-            <form>
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              class="form-control"
-              placeholder="Name"
-              required
-            />
+          <div class="row" style="text-align: center">
+            <h3>Scan to connect us</h3>
           </div>
-          <div class="form-group">
-            <label for="email"
-              >Email
-              <subscript style="color: #8d8a8a">(required)</subscript>
-            </label>
-
-            <input
-              type="email"
-              id="email"
-              class="form-control"
-              placeholder="Email"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              class="form-control"
-              placeholder="Message"
-              rows="5"
-              name="message"
-              required
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-outline-danger btn-block">
-            Send
-          </button>
-        </form>
+        </div>
       </section>
     </main>
     <div class="spacer py-3"></div>
@@ -138,8 +97,8 @@
         <!-- Logo & Branding -->
         <div class="footer-brand">
           <a href="index.html">
-            <img src="upload/logo.png" alt="logo">
-        </a>
+            <img src="upload/logo.png" alt="logo" />
+          </a>
           <h2>Shree Murti</h2>
           <p>
             Murti Sthapana Event With Ritualistic Pooja and Vibrant Pandal
@@ -161,14 +120,15 @@
           <a href="mailto:vimalkailashsharma@gmail.com">
             <i class="fas fa-envelope"></i> vimalkailashsharma@gmail.com
           </a>
-            <p style="color: #800020;">
-            <i class="fab fa-whatsapp"></i> Mobile: 
-            <a href="https://wa.me/919702497850?text=I%20want%20to%20know%20how%20to%20connect%20for%20making%20any%20Murti%20Sthapana%20or%20Pooja%20rituals." target="_blank">
+          <p style="color: #800020">
+            <i class="fab fa-whatsapp"></i> Mobile:
+            <a
+              href="https://wa.me/919702497850?text=I%20want%20to%20know%20how%20to%20connect%20for%20making%20any%20Murti%20Sthapana%20or%20Pooja%20rituals."
+              target="_blank"
+            >
               +91 97024 97850
             </a>
           </p>
-          
-          
         </div>
 
         <!-- Social Media -->
@@ -199,27 +159,7 @@
         <p>© 2025 Shree Murti | All Rights Reserved</p>
       </div>
     </footer>
-    <script>
-      function sendToWhatsApp(event) {
-        event.preventDefault();
 
-        let name = document.getElementById("name").value.trim();
-        let message = document.getElementById("message").value.trim();
-
-        if (!name || !message) {
-          alert("Please enter your name and message.");
-          return;
-        }
-
-        let whatsappMessage = `Namaste! I am ${name}. I am interested in Pooja rituals and decorations. Message: ${message}`;
-
-        let whatsappUrl = `https://wa.me/919702497850?text=${encodeURIComponent(
-          whatsappMessage
-        )}`;
-
-        window.open(whatsappUrl, "_blank");
-      }
-    </script>
     <script src="script.js"></script>
   </body>
 </html>
